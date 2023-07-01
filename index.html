@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bunny - Image Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>The Image Finder</h1>
+        <sup>Author : Harihar Upadhyay</sup>
+
+        <div class="form">
+          <div class="formElement">
+            <span>
+              <label for="Query">Image of:</label>
+              <input type="text" id="Query" name="Query" />
+            </span>
+          </div>
+          <div class="formElement">
+            <span>
+              <label for="height">Height:</label>
+              <input type="number" id="height" name="height" />
+            </span>
+            <span>
+              <label for="width">Width:</label>
+              <input type="number" id="width" name="width" />
+            </span>
+          </div>
+          <div class="formElement">
+            <input type="button" onclick="handleSubmit()" value="Find" />
+          </div>
+        </div>
+        <div id="load-cover" >
+          <div class="custom-loader"></div>
+          Searching...
+        </div>
+        <div id="cover" >
+          <img src="" alt="image" id="image-out">
+          <button id="download-button" href="#" download>Download Image</button>
+
+        </div>
+      </section>
+      <div class="card">
+        <p>
+          We are excited to inform you that our website now incorporates the
+          Unsplash API to enhance your image search experience. The Unsplash API
+          allows us to find and display high-quality images based on your
+          queries.
+        </p>
+        <p>
+          With the power of the Unsplash API, you can now explore a vast
+          collection of stunning images that cater to your specific needs.
+          Whether you're searching for nature landscapes, architecture,
+          portraits, or any other subject, our website will provide you with an
+          extensive range of options.
+        </p>
+        <p>
+          The Unsplash API not only ensures that you have access to a diverse
+          selection of images, but it also guarantees their quality and
+          resolution. You can be confident that the images you find on our site
+          are of the highest standard, making them suitable for a variety of
+          purposes, from personal projects to professional endeavors.
+        </p>
+        <p>
+          To make the most of this new feature, simply enter your desired search
+          query, and our website will use the Unsplash API to fetch relevant
+          images. You'll be presented with a visually appealing gallery that
+          aligns with your interests.
+        </p>
+        <p>
+          We hope you enjoy using the Unsplash API integration on our website.
+          If you have any questions or feedback, please don't hesitate to reach
+          out to our support team. We're here to assist you and ensure that your
+          image search experience is seamless and enjoyable.
+        </p>
+        <p>Thank you for being a valued user of our site.</p>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
