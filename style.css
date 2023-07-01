@@ -1,3 +1,5 @@
+/* Default styles */
+
 h1,
 h2,
 h3,
@@ -6,12 +8,15 @@ h5,
 h6 {
   color: #ffff00;
 }
+
 body {
   background: #252525;
 }
+
 main {
   text-align: center;
 }
+
 .card {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -29,6 +34,7 @@ main {
   line-height: 1.5;
   font-weight: bold;
 }
+
 .form {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -64,17 +70,21 @@ main {
   border-radius: 4px;
   font-size: 16px;
 }
+
 .formElement input[type="number"] {
   width: 5rem;
 }
+
 .formElement input[type="text"]:focus,
 .formElement input[type="number"]:focus {
   outline: none;
   border-color: #555555;
 }
+
 sup {
   color: #ffffff;
 }
+
 .formElement input[type="button"],
 button {
   padding: 1rem 1rem;
@@ -87,6 +97,7 @@ button {
   max-width: 10rem;
   width: 100%;
 }
+
 #cover {
   display: flex;
   flex-direction: column;
@@ -142,5 +153,30 @@ button {
 @keyframes ct4 {
   100% {
     left: calc(100% + 40px);
+  }
+}
+
+/* Media queries for mobile devices */
+
+@media only screen and (max-width: 600px) {
+  .card {
+    max-width: 90vw;
+  }
+
+  .form {
+    max-width: 90vw;
+    flex-direction: column;
+  }
+}
+
+/* Media queries for tablet devices */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .card {
+    max-width: 90vw;
+  }
+
+  .form {
+    max-width: 90vw;
   }
 }
